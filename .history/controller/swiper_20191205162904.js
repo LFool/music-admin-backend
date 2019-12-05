@@ -35,7 +35,7 @@ router.get('/list', async (ctx, next) => {
 
 router.post('/upload', async (ctx, next) => {
     const fileid = await cloudStorage.upload(ctx)
-    // console.log(fileid)
+    console.log(fileid)
     // 写数据库
     const query = `
         db.collection('swiper').add({

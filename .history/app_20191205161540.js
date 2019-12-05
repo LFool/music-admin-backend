@@ -19,7 +19,7 @@ app.use(koaBody({
 }))
 
 app.use(async (ctx, next) => {
-  // console.log('全局中间件')
+  console.log('全局中间件')
   // ctx.body = 'Hello Wolrd'
   ctx.state.env = ENV
   await next()
@@ -39,7 +39,7 @@ app.use(router.allowedMethods())
 
 
 app.listen(3000, () => {
-  // console.log('服务开启在3000端口')
+  console.log('服务开启在3000端口')
 })
 
 // MVC

@@ -39,7 +39,7 @@ app.use(router.allowedMethods())
 
 
 app.listen(3000, () => {
-  // console.log('服务开启在3000端口')
+  console.log('服务开启在3000端口')
 })
 
 // MVC

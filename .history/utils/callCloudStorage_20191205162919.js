@@ -83,7 +83,7 @@ const cloudStorage = {
                 return res
             })
             .catch(function (err) {
-                // console.log(err);
+                console.log(err);
             })
     }
 }

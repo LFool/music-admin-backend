@@ -9,7 +9,7 @@ const fileName = path.resolve(__dirname, './access_token.json')
 const updateAccessToken = async () => {
   const resStr = await rp(URL)
   const res = JSON.parse(resStr)
-  // console.log(res)
+  console.log(res)
   // 写文件
   if (res.access_token) {
     fs.writeFileSync(fileName, JSON.stringify({

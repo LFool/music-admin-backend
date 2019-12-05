@@ -20,7 +20,7 @@ const cloudStorage = {
                 return res
             })
             .catch(function (err) {
-                // console.log(err);
+                console.log(err);
             })
 
     },
@@ -45,7 +45,7 @@ const cloudStorage = {
                 return res
             })
             .catch(function (err) {})
-        // console.log(info)
+        console.log(info)
         // 2、上传图片
         const params = {
             method: 'POST',
@@ -83,7 +83,7 @@ const cloudStorage = {
                 return res
             })
             .catch(function (err) {
-                // console.log(err);
+                console.log(err);
             })
     }
 }

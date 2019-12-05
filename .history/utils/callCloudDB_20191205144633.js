@@ -18,7 +18,7 @@ const callCloudDB = async (ctx, fnName, query = {}) => {
             return res
         })
         .catch(function (err) {
-            // console.log(err);
+            console.log(err);
         })
 
 }
